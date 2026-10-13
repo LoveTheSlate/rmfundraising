@@ -560,24 +560,23 @@ ul { padding: 0; list-style: none; }
 }
 .contact-name span { font-weight: 400; color: var(--slate); }
 
-.contact-phone {
+.contact-email {
   display: block;
-  font-stretch: 64%;
+  font-stretch: 66%;
   font-weight: 800;
-  font-size: clamp(3.4rem, 1.6rem + 7.4vw, 7rem);
-  line-height: 0.9;
-  letter-spacing: -0.01em;
+  font-size: clamp(2rem, 1rem + 2.6vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: -0.005em;
   text-decoration: none;
   color: var(--ink);
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
-.contact-phone span { color: var(--gold); }
-.contact-phone:hover { color: #2a3237; }
+.contact-email span { color: var(--gold); }
+.contact-email:hover { color: #2a3237; }
 
 .contact-actions {
   margin-top: 28px;
-  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;
+  display: flex; gap: 10px;
 }
 .contact-actions .btn { padding: 0 1em; }
 
@@ -740,16 +739,15 @@ ul { padding: 0; list-style: none; }
   .headline { font-size: clamp(2.55rem, 11.6vw, 3.4rem); }
 
   .cta-row { flex-direction: column; }
-  .cta-row .btn, .cta-split, .cta-split > summary { width: 100%; }
+  .cta-row .btn { width: 100%; }
   .cta-menu { width: 100%; }
 
   .facts { grid-template-columns: 1fr; gap: 18px; }
 
   .ledger-row { grid-template-columns: 1fr; padding-block: 14px; gap: 2px; }
 
-  .contact-phone { font-size: min(17vw, 4.6rem); }
-  .contact-actions { grid-template-columns: 1fr 1fr; }
-  .contact-actions .btn-outline-ink { grid-column: 1 / -1; }
+  .contact-email { font-size: min(9.4vw, 3rem); }
+  .contact-actions .btn { width: 100%; }
   .contact-list { grid-template-columns: 1fr; gap: 14px; }
 
   .verify-intro .btn, .options-cta .btn {
